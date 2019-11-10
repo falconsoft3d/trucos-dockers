@@ -1,5 +1,4 @@
 # trucos-dockers
-Trucos de Dockers
 
 # Instalar Dockers
 ```
@@ -22,3 +21,11 @@ chown odoo: /opt/odoo/ -R
 
 docker run -v /opt/odoo/server/extra-addons:/mnt/extra-addons -p 8069:8069 --name odoo --link db:db -t odoo
 ```
+
+# Pgadmin4
+```
+docker pull dpage/pgadmin4
+docker run -p 5050:80 --link db:db --name pgadmin4dev -e "PGADMIN_DEFAULT_EMAIL=mfalcon@ynext.cl"   -e "PGADMIN_DEFAULT_PASSWORD=secret" -d dpage/pgadmin4
+```
+
+

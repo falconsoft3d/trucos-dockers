@@ -5,6 +5,18 @@
 apt-get update && apt-get upgrade -y
 apt  install docker.io
 ```
+
+# Listar Dockers
+```
+docker ps
+```
+
+# Entrar dentro del docker
+```
+docker exec -it CONTAINER_ID bash
+```
+
+
 # Instalar Portainer
 ```
 docker pull portainer/portainer

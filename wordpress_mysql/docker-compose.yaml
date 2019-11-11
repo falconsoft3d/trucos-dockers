@@ -1,0 +1,25 @@
+version: '3.1'
+
+services:
+
+  wordpress:
+    image: wordpress:php7.2-apache
+    ports:
+      - 80:80
+    environment:
+      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: x1234567890
+      WORDPRESS_DB_NAME: wordpress
+    links:
+      - mysql:mysql
+
+
+  mysql:
+    image: mysql:8.0.13
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_ROOT_PASSWORD: x1234567890
+    volumes:
+      -   /home/marlon/Documentos/Dockers/demo3/mysql-data:/var/lib/mysql

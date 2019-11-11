@@ -60,3 +60,8 @@ docker image tag 775349758637 miubuntu:1.1
 ```
 docker image history f70b4e424946
 ```
+
+# Correr un Docker y dejarlo funcionando
+```
+docker run -d nginx:1.15.7
+```

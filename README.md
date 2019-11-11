@@ -46,3 +46,12 @@ docker pull dpage/pgadmin4
 docker run -p 5050:80 --link db:db --name pgadmin4dev -e "PGADMIN_DEFAULT_EMAIL=mfalcon@ynext.cl"   -e "PGADMIN_DEFAULT_PASSWORD=secret" -d dpage/pgadmin4
 ```
 
+# Run Ubuntu
+```
+docker run -ti ubuntu /bin/bash
+```
+
+# Creamos una copia de la imagen con una nueva etiqueta
+```
+docker image tag 775349758637 miubuntu:1.1
+```

@@ -55,3 +55,8 @@ docker run -ti ubuntu /bin/bash
 ```
 docker image tag 775349758637 miubuntu:1.1
 ```
+
+# Historial del Docker
+```
+docker image history f70b4e424946
+```

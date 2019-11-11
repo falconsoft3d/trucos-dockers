@@ -11,7 +11,7 @@ apt  install docker.io
 docker ps
 ```
 
-# Entrar dentro del docker
+# Entrar dentro del docker existente
 ```
 docker exec -it CONTAINER_ID bash
 ```
@@ -64,4 +64,9 @@ docker image history f70b4e424946
 # Correr un Docker y dejarlo funcionando
 ```
 docker run -d nginx:1.15.7
+```
+
+# Parar Apache 2
+```
+sudo service apache2 stop
 ```

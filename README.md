@@ -70,3 +70,8 @@ docker run -d nginx:1.15.7
 ```
 sudo service apache2 stop
 ```
+
+# Metemos un archivo en un Docker
+```
+docker run -v /home/marlon/Documentos/Dockers/demo2/index.html:/usr/share/nginx/html/index.html:ro -d nginx:1.15.7
+```

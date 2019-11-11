@@ -75,3 +75,8 @@ sudo service apache2 stop
 ```
 docker run -v /home/marlon/Documentos/Dockers/demo2/index.html:/usr/share/nginx/html/index.html:ro -d nginx:1.15.7
 ```
+
+# MYSQL
+```
+docker run -e MYSQL_ROOT_PASSWORD=x1234567890 -d mysql:8.0.13
+```

@@ -1,8 +1,5 @@
-
-
-
 # Trucos y Herramientas de Dockers
-# Trucos y Herramientas de Dockers
+
 
 # Install Dockers Easy
 ```

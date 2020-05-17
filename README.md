@@ -1,4 +1,14 @@
+
+
+
 # Trucos y Herramientas de Dockers
+# Trucos y Herramientas de Dockers
+
+# Install Dockers Easy
+```
+apt-get update && apt-get upgrade -y
+apt  install docker.io docker-compose -y
+```
 
 # Instalar Dockers
 ```

@@ -1,6 +1,7 @@
 version: '2'
 services:
   web:
+    platform: linux/x86_64
     image: odoo:13.0
     depends_on:
       - db
@@ -11,6 +12,7 @@ services:
       - ./config:/etc/odoo
       - ./addons:/mnt/extra-addons
   db:
+    platform: linux/x86_64
     image: postgres:10
     environment:
       - POSTGRES_DB=postgres
